@@ -7,7 +7,10 @@ public class Triangulo {
     private double base;
     private double altura;
     
-    public Triangulo(double a, double b) {
+    public Triangulo(double a, double b) throws Exception{
+        if (a <= 0) throw new Exception("La altura tiene que ser positiva: "+ a);
+        if (b <= 0) throw new Exception("La altura tiene que ser positiva: "+ b);
+        
         this.altura = a;
         this.base = b;
     }
@@ -50,8 +53,13 @@ public class Triangulo {
     }
     
     public static void main(String[] args){
-        Triangulo tri = new Triangulo(17, 19);
-        System.out.println(tri);
-        System.out.print("area = "+tri.area() + ", perimtre = "+tri.perimetre());
+        Triangulo tri = null;
+        try{
+            tri = new Triangulo(17, 19);
+            System.out.println(tri);
+            System.out.print("area = "+tri.area() + " , perimtre = "+tri.perimetre());
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }  
 }
