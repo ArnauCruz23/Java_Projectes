@@ -1,5 +1,5 @@
 
-package projectesjava;
+package Triangulo;
 
 public class Triangulo {
     
