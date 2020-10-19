@@ -21,6 +21,12 @@ public class M03_UF04_FirstAssignment {
         barcoMercante.atraca();
         barcoMercante.comportamiento();
         
+        Barco bismark = new AcorazadoBismark(1000, new Motor(3000), 1, 2, 3, 3, 5);
+        
+        bismark.arranca();
+        bismark.atraca();
+        bismark.comportamiento();
+        
 
     }
 
