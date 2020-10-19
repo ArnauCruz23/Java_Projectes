@@ -24,6 +24,12 @@ public class M03_UF04_FirstAssignment {
     public static void main(String[] args) {
         // Prueba to código aquí
         
+        Barco barcoMercante = new Carguero(1000, new Motor(200), 1, 2, 1, 2000);
+        barcoMercante.arranca();
+        barcoMercante.atraca();
+        barcoMercante.comportamiento();
+        
+        
         /*Barco barco1 = new Yate(true, 4, 6, new Motor(1000), 20.0, 12.5, 23, 7);
         barco1.arranca();
         
