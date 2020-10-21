@@ -18,5 +18,6 @@ public abstract class mobiles extends Dispositivo {
         System.out.println("S'ha apagat el dispositiu portatil");
     }
     
+    //Metodo Reset
     public abstract void reset();
 }

@@ -59,8 +59,4 @@ public abstract class Dispositivo implements Conectable{
         System.out.println("S'ha apagat el dispositiu");
     }
     
-    //Metode Reset
-    public void reset(){
-        
-    }
 }

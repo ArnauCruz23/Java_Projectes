@@ -4,13 +4,13 @@ public class M03_UF04_SecondAssignment {
     
     public static void main(String[] args) {
         
-        Dispositivo mob1 = new Tablet("Samsung", "Tablet Samsung", 1000);
+        mobiles mob1 = new Tablet("Samsung", "Tablet Samsung", 1000);
         mob1.toString();
         mob1.conecta();
         mob1.desconecta();
         mob1.reset();
         
-        Dispositivo mob2 = new Portatil("MSI", "Portatil MSI", 1000);
+        mobiles mob2 = new Portatil("MSI", "Portatil MSI", 1000);
         mob2.toString();
         mob2.conecta();
         mob2.desconecta();
