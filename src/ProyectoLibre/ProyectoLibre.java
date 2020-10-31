@@ -25,6 +25,8 @@ public class ProyectoLibre {
             lucesLEDfalse.cambiarColor();
         }catch(Exception e){
             System.out.println("No se ha podido conectar" + e.getMessage());
+        }finally{
+            System.out.println("Patata");
         }
         
         dispositivoMusica cadena = new cadenaDeMusica("Sunstech", true);
